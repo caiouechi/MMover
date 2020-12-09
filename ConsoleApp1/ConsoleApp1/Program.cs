@@ -8,12 +8,12 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            for (int i = 0; i < 50000; i++)
+            for (int i = 0; i < 500000; i++)
             {
                 Thread.Sleep(3000);
                 Random rnd = new Random();
-                int month = rnd.Next(1, 20);
-                SetCursorPos(month * 300, month * 300);
+                int month = rnd.Next(1, 10);
+                SetCursorPos(month * 200, month * 200);
 
                 uint X = (uint)month * 300; 
                 uint Y = (uint)month * 300;
